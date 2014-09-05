@@ -37,7 +37,7 @@ describe('Strategy#userProfile', function() {
       it('should parse profile', function() {
         expect(profile.provider).to.equal('weibo');
         expect(profile.id).to.equal('500308595');
-        expect(profile.username).to.equal('jaredhanson');
+        expect(profile.username).to.equal('Jared Hanson');
       });
     });
   });
@@ -73,7 +73,7 @@ describe('Strategy#userProfile', function() {
       it('should parse profile', function() {
         expect(profile.provider).to.equal('weibo');
         expect(profile.id).to.equal('500308595');
-        expect(profile.username).to.equal('jaredhanson');
+        expect(profile.username).to.equal('Jared Hanson');
       });
     });
   });
@@ -110,7 +110,7 @@ describe('Strategy#userProfile', function() {
       it('should parse profile', function() {
         expect(profile.provider).to.equal('weibo');
         expect(profile.id).to.equal('500308595');
-        expect(profile.username).to.equal('jaredhanson');
+        expect(profile.username).to.equal('Jared Hanson');
       });
     });
   });
@@ -146,7 +146,7 @@ describe('Strategy#userProfile', function() {
       it('should parse profile', function() {
         expect(profile.provider).to.equal('weibo');
         expect(profile.id).to.equal('500308595');
-        expect(profile.username).to.equal('jaredhanson');
+        expect(profile.username).to.equal('Jared Hanson');
       });
     });
   });
@@ -182,7 +182,7 @@ describe('Strategy#userProfile', function() {
       it('should parse profile', function() {
         expect(profile.provider).to.equal('weibo');
         expect(profile.id).to.equal('500308595');
-        expect(profile.username).to.equal('jaredhanson');
+        expect(profile.username).to.equal('Jared Hanson');
       });
 
       it('should have additional fields in profile._json', function() {
@@ -223,7 +223,7 @@ describe('Strategy#userProfile', function() {
       it('should parse profile', function() {
         expect(profile.provider).to.equal('weibo');
         expect(profile.id).to.equal('500308595');
-        expect(profile.username).to.equal('jaredhanson');
+        expect(profile.username).to.equal('Jared Hanson');
       });
     });
   });

@@ -17,7 +17,7 @@ describe('Strategy#userProfile', function() {
     if (url != 'https://api.weibo.com/2/users/show.json') { return callback(new Error('incorrect url argument')); }
     if (accessToken != 'token') { return callback(new Error('incorrect token argument')); }
     
-    var body = '{"id":"500308595","name":"Jared Hanson","first_name":"Jared","last_name":"Hanson","link":"http:\\/\\/www.facebook.com\\/jaredhanson","username":"jaredhanson","gender":"male","email":"jaredhanson\\u0040example.com"}';
+    var body = '{"id":"500308595","screen_name":"jaredhanson","name":"Jared Hanson","link":"http:\\/\\/www.facebook.com\\/jaredhanson","username":"jaredhanson","gender":"male","email":"jaredhanson\\u0040example.com"}';
     callback(null, body, undefined);
   };
     
@@ -36,14 +36,9 @@ describe('Strategy#userProfile', function() {
       expect(profile.provider).to.equal('weibo');
       
       expect(profile.id).to.equal('500308595');
-      expect(profile.username).to.equal('jaredhanson');
-      expect(profile.displayName).to.equal('Jared Hanson');
-      expect(profile.name.familyName).to.equal('Hanson');
-      expect(profile.name.givenName).to.equal('Jared');
+      expect(profile.username).to.equal('Jared Hanson');
+      expect(profile.fullname).to.equal('jaredhanson');
       expect(profile.gender).to.equal('male');
-      expect(profile.profileUrl).to.equal('http://www.facebook.com/jaredhanson');
-      expect(profile.emails).to.have.length(1);
-      expect(profile.emails[0].value).to.equal('jaredhanson@example.com');
       expect(profile.photos).to.be.undefined;
     });
     
